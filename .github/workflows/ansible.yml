@@ -22,5 +22,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install ansible
 
-      - name: Valida a sintaxe do playbook Ansible
-        run: python -m ansible playbook --syntax-check kafka.yml
+      

@@ -1,0 +1,26 @@
+name: Testes do playbook do Ansible
+run-name: ${{ github.actor }} está testando o ansible
+on: [push]
+jobs:
+  testa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+          cache: 'pip'
+
+      - name: Mostra a versão do Python instalada
+        run: python -c "import sys; print(sys.version)"
+
+      - name: Atualiza o pip e instala o ansible
+        run: |
+          python -m pip install --upgrade pip
+          pip install ansible
+
+      - name: Valida a sintaxe do playbook Ansible
+        run: python -m ansible playbook --syntax-check kafka.yml

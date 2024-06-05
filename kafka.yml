@@ -2,7 +2,7 @@
   hosts: outros_hosts
   vars: 
     - installation_dir : /opt/kafka
-  ---tasks:
+  tasks:
     - name: Install JRE after apt update
       become: yes
       apt:
@@ -30,10 +30,10 @@
         path: "{{installation_dir}}"
         state: directory
         mode: 0755
-        ----owner: kafka
+        owner: kafka
         group: kafka
 
-        -   name: Download Kafka and Unzip 
+    - name: Download Kafka and Unzip 
       become: yes
       become_user: kafka
       unarchive:
@@ -42,7 +42,7 @@
         mode: 0755
         remote_src: yes
 
-- name: Move all the files to parent Directory
+    - name: Move all the files to parent Directory
       become: yes
       become_user: kafka
       shell:
@@ -87,7 +87,7 @@
           WantedBy=multi-user.target
         mode: 0755
       
-- name: Create a Service file for Kafka with Copy module
+    - name: Create a Service file for Kafka with Copy module
       become: yes
       copy:
         dest: /etc/systemd/system/kafka.service

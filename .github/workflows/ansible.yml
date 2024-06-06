@@ -24,3 +24,6 @@ jobs:
 
       - name: Valida a sintaxe do playbook Ansible
         run: python -m ansible playbook --syntax-check kafka.yml
+        
+      - name: Realiza o dry-run do playbook Ansible
+        run: python -m ansible playbook -C kafka.yml

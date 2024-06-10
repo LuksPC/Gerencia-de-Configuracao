@@ -33,7 +33,7 @@
         owner: kafka
         group: kafka
 
-    - name: Download Kafka and Unzip 
+    - name: Download Kafka 
       become: yes
       become_user: kafka
       unarchive:

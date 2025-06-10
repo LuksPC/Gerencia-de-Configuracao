@@ -1,6 +1,6 @@
-# 📘 Gerência de Configuração (Sistema de Configuração)
+# Gerência de Configuração (Sistema de Configuração)
 
-## 🔍 Visão Geral
+## Visão Geral
 
 Este projeto tem como objetivo implementar um sistema de **Gerência de Configuração**, facilitando:
 
@@ -10,11 +10,11 @@ Este projeto tem como objetivo implementar um sistema de **Gerência de Configur
 
 ---
 
-## 🚀 Começando
+## Começando
 
 Estas instruções vão te ajudar a configurar e executar o projeto localmente.
 
-### 📋 Pré-requisitos
+### Pré-requisitos
 
 Você precisa ter instalado:
 
@@ -24,7 +24,7 @@ Você precisa ter instalado:
 
 ---
 
-### 🔧 Instalação
+### Instalação
 
 1. Clone o repositório:
 
@@ -59,13 +59,13 @@ docker-compose -f kafka.yml up -d
 
 ---
 
-## ⚙️ Uso
+##  Uso
 
 - **hello.py**: script exemplo com saída simples.
 - **test.py**: inclui testes básicos de verificação.
 - Outros módulos serão integrados conforme necessidade.
 
-### 💪 Exemplo de execução:
+### Exemplo de execução:
 
 ```bash
 python hello.py
@@ -75,7 +75,7 @@ python hello.py
 
 ---
 
-## 💪 Testes
+## Testes
 
 Execute os testes com:
 
@@ -91,7 +91,7 @@ pytest
 
 ---
 
-## 📦 Implantação
+## Implantação
 
 Caso deseje executar em produção:
 
@@ -101,44 +101,13 @@ Caso deseje executar em produção:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Python 3.8+**
-- **Docker & Docker Compose**
+- **Docker**
 - **Apache Kafka**
+- **Ansible**
+- **GitHub Actions**
 
 ---
-
-## 🤝 Como Contribuir
-
-1. Fork este repositório;
-2. Crie uma nova branch: `git checkout -b feature/nova-funcionalidade`;
-3. Faça commit das alterações: `git commit -m 'Adiciona nova funcionalidade'`;
-4. Faça push para a branch: `git push origin feature/nova-funcionalidade`;
-5. Abra um Pull Request.
-
----
-
-## 📌 Versionamento
-
-Usamos [SemVer](https://semver.org/lang/pt-BR/). Para as versões disponíveis, veja as [releases do repositório](https://github.com/LuksPC/Gerencia-de-Configuracao/releases).
-
----
-
-## 👥 Autor
-
-- **Lucas Pereira Cavalcante** – [@LuksPC](https://github.com/LuksPC)
-
----
-
-## 📄 Licença
-
-Este projeto ainda não possui uma licença definida. Recomenda-se utilizar uma licença como MIT, Apache 2.0 ou GPL v3.
-
----
-
-## 🏱 Agradecimentos
-
-- Inspiração de templates de README: [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- Fontes sobre Gerência de Configuração: Pressman, ITIL, DevMedia, normas ISO/CMMI.
 

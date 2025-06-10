@@ -121,8 +121,10 @@ ansible --version
 ```
 
 2. Execute o playbook:
-ansible-playbook -i inventory.yml playbook.yml
 
+```bash
+ansible-playbook -i inventory.yml playbook.yml
+```
 
 ---
 

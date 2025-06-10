@@ -1,7 +1,7 @@
 - name: Installing Kafka on Ubuntu
   hosts: outros_hosts
   vars: 
-    - installation_dir : /opt/kafka
+    installation_dir : /opt/kafka
   tasks:
     - name: Install JRE after apt update
       become: yes

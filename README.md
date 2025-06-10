@@ -125,6 +125,7 @@ ansible --version
 ```bash
 ansible-playbook -i inventory.yml playbook.yml
 ```
+> Obs.: adapte os arquivos inventory.yml e playbook.yml conforme seu ambiente (local ou remoto).
 
 ---
 

@@ -101,6 +101,31 @@ Caso deseje executar em produção:
 
 ---
 
+## Automação com Ansible
+
+O projeto utiliza o **Ansible** para automatizar tarefas de provisionamento e configuração de ambiente. Isso garante padronização, reprodutibilidade e agilidade na entrega.
+
+### Principais usos:
+
+- Instalação de dependências e bibliotecas em servidores;
+- Configuração de serviços como Kafka, Zookeeper ou bancos de dados;
+- Deploy de artefatos versionados;
+- Integração com pipelines CI/CD (como GitHub Actions).
+
+### Como executar os playbooks:
+
+1. Verifique se o `ansible` está instalado:
+
+```bash
+ansible --version
+```
+
+2. Execute o playbook:
+ansible-playbook -i inventory.yml playbook.yml
+
+
+---
+
 ##  Tecnologias Utilizadas
 
 - **Python 3.8+**

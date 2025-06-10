@@ -70,7 +70,7 @@ docker-compose -f kafka.yml up -d
 ```bash
 python hello.py
 # Saída esperada:
-# Hello World
+# Teste da APi
 ```
 
 ---
